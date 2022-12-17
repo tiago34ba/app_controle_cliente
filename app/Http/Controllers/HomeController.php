@@ -23,17 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // return view('home');
         return view('home');
-    }
-
-    /**
-     * Show the application contact.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function contact()
-    {
-        return view('pages.contact');
     }
 }

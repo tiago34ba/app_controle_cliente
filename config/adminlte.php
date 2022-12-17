@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Painel Admin</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -297,57 +297,50 @@ return [
             'topnav' => true,
         ],
         [
-            'text' => 'Home',
-            'url'  => 'home',
-            'icon' => 'fas fa-house-user',
-        ],
-        [
             'text' => 'Dashboard',
             'url'  => 'dashboard',
             'icon' => 'fas fa-tachometer-alt',
             //'can'  => 'is_admin',
         ],
         [
+            'text'    => 'message',
+            'url'  => 'message',
+            'icon'    => 'fas fa-envelope',
+        ],
+        [
             'text'    => 'client',
+            'url'  => 'client',
             'icon'    => 'fa fa-users',
-            'submenu' => [
-                [
-                    'text' => 'registration de Client',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'List de Client',
-                    'url'  => '#',
-                ],
-            ],
         ],
         [
             'text'    => 'products',
+            'url'  => 'products',
             'icon'    => 'fas fa-list',
-            'submenu' => [
-                [
-                    'text' => 'registration de products',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'List de products',
-                    'url'  => '#',
-                ],
-            ],
         ],
         [
             'text'    => 'services',
+            'url'  => 'services',
             'icon'    => 'fas fa-list',
-            'submenu' => [
-                [
-                    'text' => 'Cadastro de Clientes',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'Lista de Clien',
-                    'url'  => '#',
-                ],
-            ],
+        ],
+        [
+            'text'    => 'financial',
+            'url'  => 'financial',
+            'icon'    => 'fas fa-credit-card',
+        ],
+        [
+            'text'    => 'budget',
+            'url'  => 'budget',
+            'icon'    => 'fas fa-file',
+        ],
+        [
+            'text'    => 'report',
+            'url'  => 'report',
+            'icon'    => 'fas fa-folder',
+        ],
+        [
+            'text'    => 'monthly payment',
+            'url'  => 'monthly payment',
+            'icon'    => 'fas fa-credit-card',
         ],
         /*['header' => 'labels'],
         [

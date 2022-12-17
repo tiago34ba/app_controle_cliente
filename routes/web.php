@@ -17,28 +17,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/client', [App\Http\Controllers\backend\ClientController::class, 'index']);
 
-
-Route::group(['middleware' => ['auth']], function () {
-    Route::resource('produtos', 'produtos\produtosController');
-
-    Route::resource('categorias', 'categorias\categoriasController');
-
-    Route::resource('vendas', 'vendas\vendasController');
-
-    Route::get('numero-vendas', 'vendas\vendasController@numeroVendas')->name('numero-vendas');
-
-    Route::get('numero-produtos', 'produtos\produtosController@numeroProdutos')->name('numero-produtos');
-
-    Route::get('numero-categorias', 'categorias\categoriasController@numeroCategorias')->name('numero-categorias');
-
-    Route::get('categorias-produtos', 'categorias\categoriasController@categoriaCadastraProduto')->name('categorias-produtos');
-
-    Route::get('relatorio-mensal', 'relatorios\relatoriosController@relatorioMensal')->name('relatorio-mensal');
+Route::get('home', function () {
+    return redirect('/dashboard');
 });
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

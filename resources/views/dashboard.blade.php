@@ -1,6 +1,7 @@
 @extends('adminlte::page')
 
 @section('title', 'Dashboard')
+
 @section('content_header')
     <h1>Dashboard</h1>
 @stop
@@ -18,7 +19,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Mais detalhes <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="small-box-footer">Mais Informações <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
